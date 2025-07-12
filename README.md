@@ -1,16 +1,13 @@
-## Hi there 👋
+# Hi, I’m João (“jp864”) 👋
 
-<!--
-**jp864/jp864** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## 🚀 Featured Projects
+- [New Landing Page](https://github.com/jp864/new-landing-page) — A responsive, HTML‑only template for product launches.  
+- [Casa Lisboa Vender](https://github.com/jp864/casa-lisboa-vender) — Pure‑CSS home‑sale template with custom grid layouts.
 
-Here are some ideas to get you started:
+## 🎨 CSS Experiments
+- [Casa Vender Lumiar](https://github.com/jp864/casa-vender-lumiar) — Advanced CSS hover effects.  
+- [Casa Vender Lumiar JP](https://github.com/jp864/casa-vender-lumiar-jp) — Localization tweaks & RTL support.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🛠️ Misc & Demos
+- [aaa](https://github.com/jp864/aaa) — Sandbox for testing new ideas.
+![Landing‑page preview](./assets/new-landing-page-screenshot.png)
