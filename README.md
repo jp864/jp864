@@ -30,7 +30,7 @@ I love turning ideas into working software and continually expanding my toolkit.
 ## ⚡ Side Projects (AI‑Powered)
 
 - [Casa Vender Lumiar](https://github.com/jp864/casa-vender-lumiar) — House marketing site  
-- [AltCoin](https://github.com/jp864/altcoin) — AltCoin (not yet launched)  
+- [AltCoin](https://github.com/jp864/altcoin) — AltCoin (not launched)  
 - [URCR7](https://github.com/jp864/x1w1s1z) — AltCoin (launched + paid DEX)  
 
 ![snake gif](https://github.com/jp864/jp864/blob/output/github-snake-dark.svg) 
