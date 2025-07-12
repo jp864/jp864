@@ -1,4 +1,4 @@
-# Hey im João, Started my online journey with 8y old doing paid photoshop for people, then swithced to video editing , then to gaming then to coding.
+# Portfolio
 
 
 ## ⚡ Side Projects done with AI
