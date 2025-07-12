@@ -4,7 +4,7 @@
 - [New Landing Page](https://github.com/jp864/new-landing-page) — A responsive, HTML‑only template for product launches.  
 - [Casa Lisboa Vender](https://github.com/jp864/casa-lisboa-vender) — Pure‑CSS home‑sale template with custom grid layouts.
 
-## 🎨 CSS Experiments
+## 🎨 SIDE PROJECTS DONE WITH AI
 - [Casa Vender Lumiar](https://github.com/jp864/casa-vender-lumiar) — Advanced CSS hover effects.  
 - [Casa Vender Lumiar JP](https://github.com/jp864/casa-vender-lumiar-jp) — Localization tweaks & RTL support.
 
