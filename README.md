@@ -3,7 +3,7 @@
 
 
 ## ⚡ About me
--[About Me](https://pastebin.com/zaYd6pg9)
+- [About Me](https://pastebin.com/zaYd6pg9)
 
 
 ## ⚡ Side Projects done with AI
