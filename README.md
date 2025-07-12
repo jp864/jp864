@@ -1,12 +1,9 @@
-# Hi, I’m João (“jp864”) 👋
+# Hey im João, Started my online journey with 8y old doing paid photoshop for people, then swithced to video editing , then to gaming then to coding.
 
-## 🚀 Featured Projects
-- [New Landing Page](https://github.com/jp864/new-landing-page) — A responsive, HTML‑only template for product launches.  
-- [Casa Lisboa Vender](https://github.com/jp864/casa-lisboa-vender) — Pure‑CSS home‑sale template with custom grid layouts.
 
-## 🎨 SIDE PROJECTS DONE WITH AI
+## ⚡ Side Projects done with AI
 - [Casa Vender Lumiar](https://github.com/jp864/casa-vender-lumiar) — House Marketing
-- https://github.com/jp864/altcoin - AltCoin Pre Launch
+- [AltCoin](https://github.com/jp864/altcoin) - AltCoin Pre Launch
 - 
 
 
