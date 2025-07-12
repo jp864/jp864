@@ -6,7 +6,6 @@
 
 ## 🎨 SIDE PROJECTS DONE WITH AI
 - [Casa Vender Lumiar](https://github.com/jp864/casa-vender-lumiar) — Advanced CSS hover effects.  
-- [Casa Vender Lumiar JP](https://github.com/jp864/casa-vender-lumiar-jp) — Localization tweaks & RTL support.
 
 ## 🛠️ Misc & Demos
 - [aaa](https://github.com/jp864/aaa) — Sandbox for testing new ideas.
