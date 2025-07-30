@@ -5,7 +5,7 @@ I’m a self‑taught technologist with a lifelong passion for computers:
 
 - **Early beginnings**: Started at age 5 on a hand‑me‑down 2005 “Square Generic” PC, tinkering with SuperTux.  
 - **Creative growth**: By eight, I was playing Counter‑Strike, learning Photoshop to craft graphics—and even monetizing my designs.  
-- **Multimedia skills**: Taught myself video editing to produce videos on Youtube and polished CS:GO and other videogame highlight videos.  
+- **Multimedia skills**: Taught myself video editing to produce videos on Youtube and some videogame highlight videos.  
 - **AI & automation**: Recently leveraged AI‑driven tools to spin up websites for dropshipping, crypto ventures, and other side projects.  
 - **Current focus**: At 21 and wrapping up my IT degree, I’m diving into C programming and exploring low‑level systems.  
 
