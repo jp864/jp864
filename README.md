@@ -1,6 +1,3 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/jp864/media/main/wdadwdawd.jpg" width="100%">
-</p>
 
 ## ♾️ About Me
 
@@ -14,7 +11,10 @@ I’m a self‑taught technologist with a lifelong passion for computers:
 
 I love turning ideas into working software and continually expanding my toolkit.
 
----
+<p align="center">
+  <img src="https://raw.githubusercontent.com/jp864/media/main/wdadwdawd.jpg" width="100%">
+</p>
+
 
 ## 🌐 Socials
 
