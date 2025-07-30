@@ -15,6 +15,8 @@ I love turning ideas into working software and continually expanding my toolkit.
 
 ## 🌐 Socials
 
+---
+
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/jprodrigues_4)  
 [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@jprodrigues_4)  
 
