@@ -1,3 +1,6 @@
+<div style="background-color: white; padding: 10px; border-radius: 10px;">
+  <img src="https://raw.githubusercontent.com/jp864/media/main/super-tux-snowy-questions.gif" width="100%">
+</div>
 
 ## ♾️ About Me
 
