@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/jp864/media/main/wdadwdawd.jpg" width="100%">
+</p>
 
 ## ♾️ About Me
 
