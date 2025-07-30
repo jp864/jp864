@@ -33,4 +33,5 @@ I love turning ideas into working software and continually expanding my toolkit.
 - [AltCoin](https://github.com/jp864/altcoin) — AltCoin (not launched)  
 - [URCR7](https://github.com/jp864/x1w1s1z) — AltCoin (launched + paid DEX)  
 
-![snake gif](https://github.com/jp864/jp864/blob/output/github-snake-dark.svg) 
+![GIF Atualizado](https://raw.githubusercontent.com/jp864/media/main/super-tux-snowy-questions.gif)
+
