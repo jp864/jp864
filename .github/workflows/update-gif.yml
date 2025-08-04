@@ -38,11 +38,15 @@ jobs:
       run: node generate-super-tux-snake.js
       working-directory: media
 
+    - name: Listar ficheiros .gif gerados
+      run: ls -lh *.gif
+      working-directory: media
+
     - name: Commit e Push dos GIFs atualizados
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
-        git add super-tux-snowy-questions.gif super-tux-game-effect.gif
+        git add super-tux-snowy-questions.gif
         git commit -m "Atualização diária do GIF"
         git push
       working-directory: media
