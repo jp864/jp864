@@ -42,16 +42,19 @@ jobs:
       run: ls -lh *.gif
       working-directory: media
 
-    - name: Commit e Push dos GIFs atualizados
+    - name: Commit e Push dos arquivos atualizados
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
-        git add super-tux-snowy-questions.gif
+
+        git add .
+
+        git status  # Opcional: para ver quais arquivos foram adicionados
 
         if git diff --cached --quiet; then
-          echo "Nenhuma alteração no GIF. Nada para comitar."
+          echo "Nenhuma alteração para comitar."
         else
-          git commit -m "Atualização diária do GIF"
+          git commit -m "Atualização diária do GIF e scripts"
           git push
         fi
       working-directory: media
