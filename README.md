@@ -1,10 +1,13 @@
 # Welcome to my GitHub Profile! 🐧
 
-Here's Super Tux sliding through my latest projects:
+![Super Tux Animation](https://raw.githubusercontent.com/jp864/media/main/super-tux-snowy-questions.gif)
 
-![Super Tux Snowy Questions](https://raw.githubusercontent.com/jp864/media/main/super-tux-snowy-questions.gif)
+## 🐧 Workflow Status
 
-### Current Workflow Status
+![Super Tux Workflow Status](https://github.com/jp864/jp864/actions/workflows/test.yml/badge.svg)
 
-![Super Tux CI](https://github.com/jp864/your-repo-name/actions/workflows/supertux.yml/badge.svg)
+---
+
+This workflow runs daily or on pushes and generates fun Super Tux animations!
+
 
