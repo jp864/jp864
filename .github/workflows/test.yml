@@ -1,44 +1,47 @@
-name: 🐧 Super Tux CI 🐧
+name: Super Tux Animation Generator
+
+permissions:
+  contents: write
 
 on:
+  schedule:
+    - cron: "0 0 * * *" # daily at midnight UTC
+  workflow_dispatch:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
-  tux-build-test:
+  generate:
     runs-on: ubuntu-latest
-    steps:
-      - name: 🐧 Checkout code
-        uses: actions/checkout@v3
+    timeout-minutes: 10
 
-      - name: 🐧 Set up Python
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: true
+
+      - name: Setup Python (or any required env)
         uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
+          python-version: '3.x'
 
-      - name: 🐧 Install dependencies
+      - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install pillow  # example if you use Python to create GIFs
 
-      - name: 🐧 Run lint (flake8)
+      - name: Generate Super Tux Animation GIF
         run: |
-          echo "Waddling through the code..."
-          pip install flake8
-          flake8 .
+          # This is where you run your script to generate the GIF
+          # Example placeholder:
+          ./scripts/generate-supertux-gif.sh dist/supertux.gif
 
-      - name: 🐧 Run tests
-        run: |
-          echo "Sliding down the ice to test!"
-          pip install pytest
-          pytest tests/
+      - name: Deploy to Output Branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: output
+          commit_message: "Update Super Tux animation [skip ci]"
 
-      - name: 🐧 Celebrate success!
-        if: success()
-        run: echo "🎉 All tests passed! Super Tux would be proud! 🐧"
-
-      - name: 🐧 Warning if failure
-        if: failure()
-        run: echo "🚨 Oh no! The ice cracked! Fix the errors! 🐧"
