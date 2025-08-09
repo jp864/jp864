@@ -1,52 +1,44 @@
-name: GitHub Snake Game
-
-# Grant Actions write‑access to your repo contents
-permissions:
-  contents: write
+name: 🐧 Super Tux CI 🐧
 
 on:
-  # Schedule the workflow to run daily at midnight UTC
-  schedule:
-    - cron: "0 0 * * *"
-  # Allow manual triggering of the workflow
-  workflow_dispatch:
-  # Trigger the workflow on pushes to the main branch
   push:
-    branches:
-      - main
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
-  generate:
+  tux-build-test:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
-
     steps:
-      # Step 1: Checkout the repository (persist-credentials enables GITHUB_TOKEN for pushes)
-      - name: Checkout Repository
+      - name: 🐧 Checkout code
         uses: actions/checkout@v3
+
+      - name: 🐧 Set up Python
+        uses: actions/setup-python@v4
         with:
-          persist-credentials: true
+          python-version: '3.11'
 
-      # Step 2: Generate the snake animations
-      - name: Generate GitHub Contributions Snake Animations
-        uses: Platane/snk@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
-            dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: 🐧 Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-      # Step 3: Deploy the generated files to the 'output' branch
-      - name: Deploy to Output Branch
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          # This will use the same GITHUB_TOKEN (which now has write perms) to push to `output`
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          publish_branch: output
-          commit_message: "Update snake animation [skip ci]"
+      - name: 🐧 Run lint (flake8)
+        run: |
+          echo "Waddling through the code..."
+          pip install flake8
+          flake8 .
 
+      - name: 🐧 Run tests
+        run: |
+          echo "Sliding down the ice to test!"
+          pip install pytest
+          pytest tests/
 
+      - name: 🐧 Celebrate success!
+        if: success()
+        run: echo "🎉 All tests passed! Super Tux would be proud! 🐧"
+
+      - name: 🐧 Warning if failure
+        if: failure()
+        run: echo "🚨 Oh no! The ice cracked! Fix the errors! 🐧"
