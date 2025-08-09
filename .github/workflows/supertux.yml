@@ -1,0 +1,39 @@
+name: Generate Super Tux Contribution GIF
+
+permissions:
+  contents: write
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "0 0 * * *"  # daily midnight UTC
+  workflow_dispatch:
+
+jobs:
+  build-gif:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install pillow requests imageio
+
+      - name: Run Super Tux GIF generator
+        run: python generate_supertux_gif.py
+
+      - name: Deploy GIF to output branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: output
+          commit_message: "Update Super Tux contribution GIF [skip ci]"
